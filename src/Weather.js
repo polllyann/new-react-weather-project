@@ -1,23 +1,22 @@
 import React, {useState} from "react";
 import "./Weather.css";
 import axios from "axios";
+import ShowDate from "./ShowDate.js";
 
 export default function Weather(props) {
-  
     const [weatherData, setWeatherData] = useState({ready: false});
 
     function handleResponse(response) {
         console.log(response.data);
-        
         setWeatherData({
             ready: true,
             temperature: response.data.main.temp,
             wind: response.data.wind.speed,
             city: response.data.name,
+            date: new Date (response.data.dt * 1000),
             humidity: response.data.main.humidity,
             description: response.data.weather[0].description,
-            image: response.data.name,
-            date: "wednesday 7:00"
+            image: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
         }
         )
     }
@@ -47,7 +46,7 @@ export default function Weather(props) {
             <div className="col-6 city">
             <h1>{weatherData.city}</h1>
         <ul>
-            <li>{weatherData.date}</li>
+            <li><ShowDate date={weatherData.date}/></li>
             <li className="text-capitalize">{weatherData.description}</li>
         </ul>
             </div>
