@@ -6,4 +6,13 @@
 .App footer {
     font-size: 11px;
     margin: 10px 0;
+    text-align: center;
+}
+
+.App a {
+    color: #353519;
+}
+
+.App a:hover {
+    color: #f98638;
 }
