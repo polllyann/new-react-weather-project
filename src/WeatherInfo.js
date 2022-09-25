@@ -1,14 +1,13 @@
 import React from "react";
 import ShowDate from "./ShowDate.js";
+import WeatherIcon from "./WeatherIcon.js";
 
 export default function WeatherInfo(props) {
     return (
     <div className="WeatherInfo">
     <div className="row mt-3">
             <div className="col-6">
-            <img src={props.data.image} 
-                alt="Rain"
-                />
+                <WeatherIcon code={props.data.image}/>
                 <span className="temperature">{Math.round(props.data.temperature)}</span>
                 <span className="unit">°C</span>
             <ul>
