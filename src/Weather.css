@@ -39,22 +39,6 @@
     vertical-align: top;
 }
 
-.weather .temperature {
-    font-weight: bold;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 60px;
-}
-
-.weather .unit {
-    font-size: 16px;
-    font-weight: 400;
-    position: relative;
-    top: -32px;
-    margin-left: 5px;
-    line-height: 1;
-}
-
 .weather .city {
     text-align: right;
 }

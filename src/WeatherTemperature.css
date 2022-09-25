@@ -1,0 +1,19 @@
+.WeatherTemperature .temperature {
+    font-weight: bold;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.WeatherTemperature .unit {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    top: -32px;
+    margin-left: 5px;
+    line-height: 1;
+}
+
+.WeatherTemperature a {
+    color: #79769B;
+}
