@@ -3,12 +3,15 @@
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 900;
-    padding: 35px;
-    padding-bottom: 50px;
     border-radius: 4px;
-    background-image: url("./23.png");
+    background-image: url("./forest.jpg");
     background-size: 100%;
 
+}
+
+.weatherClass {
+    padding: 35px;
+    padding-bottom: 50px;
 }
 
 .weather form {
@@ -42,4 +45,34 @@
 
 .weather .city {
     text-align: right;
+}
+
+.forecastClass {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: -20px;
+}
+
+@media (max-width: 450px) {
+
+    .searchButton {
+        font-size: 10px;
+    }
+
+    .searchField {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .searchButton {
+        font-size: 7px;
+    }
+
+    .searchField {
+        font-size: 7px;
+    }
 }

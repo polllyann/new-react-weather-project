@@ -41,17 +41,20 @@ search(city);
 
     if (weatherData.ready) {
         return (<div className="weather">
+            <div className="weatherClass">
         <form onSubmit={handleSubmit}>
             <div className="row">
                 <div className="col-9">
-            <input type="search" placeholder="Enter a city..." className="form-control" autoFocus="on" onChange={handleCityChange}/></div>
+            <input type="search" placeholder="Enter a city..." className="form-control searchField" autoFocus="on" onChange={handleCityChange}/></div>
             <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-light w-100" /></div>
+            <input type="submit" value="Search" className="btn btn-light w-100 searchButton" /></div>
             </div>
         </form>
         <WeatherInfo data={weatherData} />
+        </div>
+        <div className="forecastClass">
         <WeatherForecast coordinates={weatherData.coordinates} />
-        </div>);
+        </div></div>);
     } 
     else { 
 search(city);

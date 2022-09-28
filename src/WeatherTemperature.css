@@ -1,5 +1,4 @@
 .WeatherTemperature .temperature {
-    font-weight: bold;
     font-size: 64px;
     font-weight: 900;
     line-height: 60px;
@@ -21,4 +20,20 @@
 
 .WeatherTemperature a:hover {
     color: #F98638;
+}
+
+@media (max-width: 450px) {
+    .WeatherTemperature .temperature {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .WeatherTemperature .unit {
+        font-size: 15px;
+        font-weight: 900;
+        position: relative;
+        top: -22px;
+        margin-left: 5px;
+        line-height: 1;
+    }
 }
